@@ -2,4 +2,4 @@
 Portfolio Landing Page with TailwindCSS
 
 #Live
-[https://greatkhanjoy.me]
+https://meek-dasik-2f5634.netlify.app/
