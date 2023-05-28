@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/owl.carousel.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <title>Portfolio Template With TailwindCSS</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+      <!--Flex Container-->
+      <div class="flex items-center justify-between space-x-5">
+        <!--Logo-->
+        <div class="pt-2 w-[200px]">
+          <a href="#"><img src="/assets/logo.png" alt="logo" /></a>
+        </div>
+        <!--Menu Items-->
+        <div class="hidden md:flex space-x-6 items-center">
+          <a href="#" class="hover:text-bluePrimary font-medium">About</a>
+          <a href="#" class="hover:text-bluePrimary font-medium">Services</a>
+          <a href="#" class="hover:text-bluePrimary font-medium">Portfolio</a>
+          <a href="#" class="hover:text-bluePrimary font-medium">Testimonial</a>
+        </div>
+        <!--Button-->
+        <div class="w-[200px] relative pt-2">
+          <input
+            type="text"
+            placeholder="Search"
+            class="p-4 border border-[#dededf] rounded-xl placeholder:text-black text-sm w-full"
+          />
+          <button>
+            <i data-feather="search" class="absolute top-6 right-2"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <sction id="hero md:min-h-screen">
+      <!--Flex Container-->
+      <div
+        class="container mx-auto flex flex-col-reverse py-28 gap-y-6 md:flex-row md:space-x-10"
+      >
+        <!--Content-->
+        <div
+          class="flex flex-col w-full justify-between gap-y-20 px-6 md:w-2/5"
+        >
+          <div class="flex flex-col gap-y-10">
+            <h1 class="text-headingTwo font-bold text-center leading-tight md:text-left md:text-headingOne">
+              We have Design Experience
+            </h1>
+            <div class="flex gap-x-5">
+              <span class="mt-2 ml-2 w-16 h-[2px] bg-black"></span>
+              <p class="text-sm">
+                Hi! I am a UI/UX Designer- Creating bold & brave interface
+                design for companies all across the world.
+              </p>
+            </div>
+            <div
+              class="flex gap-4 items-center justify-center md:justify-start"
+            >
+              <button
+                class="flex gap-x-4 bg-bluePrimary px-6 py-4 text-white rounded-xl hover:bg-blueSecondary"
+              >
+                <span>Let's Talk</span>
+                <i data-feather="send" class="text-[10px]"></i>
+              </button>
+              <button class="flex gap-x-2 px-6 py-6">
+                <span>Portfolio</span>
+                <i data-feather="arrow-up-right" class=""></i>
+              </button>
+            </div>
+          </div>
+          <!--Social Media-->
+          <div class="flex gap-4 items-center justify-center md:justify-start">
+            <p>Check Out My</p>
+            <div class="flex items-center justify-between space-x-5">
+              <a href="#" class="bg-grayishLight rounded-full p-4 hover:bg-bluePrimary hover:text-white">
+                <i data-feather="github"></i>
+              </a>
+              <a href="#" class="bg-grayishLight rounded-full p-4 hover:bg-bluePrimary hover:text-white">
+                <i data-feather="facebook" class=""></i>
+              </a>
+              <a href="#" class="bg-grayishLight rounded-full p-4 hover:bg-bluePrimary hover:text-white">
+                <i data-feather="twitter" class=""></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-3/5">
+          <img src="/assets/hoody.png" alt="hero" class="" />
+        </div>
+      </div>
+    </sction>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-bgPrimary md:md:min-h-screen">
+      <div class="container mx-auto flex flex-col gap-y-10 md:flex-row md:space-x-8 py-28">
+        <!--Left content-->
+        <div class="w-full pb-10  justify-between flex flex-col gap-y-10 items-center md:items-start md:w-1/2">
+        <div class="flex flex-col gap-y-8">
+          <h1 class="text-headingTwo leading-tight font-bold text-center md:text-left md:text-headingOne">
+            Services I Offer
+          </h1>
+          <div class="flex gap-x-5 text-center max-w-md md:justify-start md:text-left">
+            <span class="mt-2 w-16 h-[2px] bg-black"></span>
+            <p class="text-sm">We help ambitious businesses like yours generate more profits by building awerness, driving web traffic, connecting with customers and growing overall sales.</p>
+            </p>
+          </div>
+          </div>
+
+          <div>
+                        <button class="hover:text-white p-16 bg-[url('/assets/services-offer.svg')] bg-cover">
+                <i data-feather="arrow-up-right" class="text-bluePrimary w-12 h-12 hover:text-white"></i>
+            </button>
+          </div>
+
+        </div>
+        <!--Right Content-->
+        <div class="flex flex-col w-full md:w-1/2">
+            <!--Service 1-->
+            <div class="flex gap-8 border-t-2 border-t-black py-12">
+                <div class="w-[50px] pt-5">
+                    <p class="text-headingFive">01/</p>
+                </div>
+                <div class="flex flex-col gap-y-8 w-full">
+                    <h2 class="text-headingThree font-bold md:text-headingTwo">Web UI/UX Design</h2>
+                    <div class="flex justify-between items-center">
+                        <p class="font-bold">Explore</p>
+                        <button class="bg-bluePrimary p-3 rounded-full">
+                            <i data-feather="arrow-up-right" class="text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Service 2-->
+            <div class="flex gap-8 border-t-2 border-t-black py-12">
+                <div class="w-[50px] pt-5">
+                    <p class="text-headingFive">02/</p>
+                </div>
+                <div class="flex flex-col gap-y-8 w-full">
+                    <h2 class="text-headingThree font-bold md:text-headingTwo">Mobile App UI/UX Design</h2>
+                    <div class="flex justify-between items-center">
+                        <p class="font-bold">Explore</p>
+                        <button class="bg-bluePrimary p-3 rounded-full">
+                            <i data-feather="arrow-up-right" class="text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Service 3-->
+            <div class="flex gap-8 border-t-2 border-t-black py-12">
+                <div class="w-[50px] pt-5">
+                    <p class="text-headingFive">03/</p>
+                </div>
+                <div class="flex flex-col gap-y-8 w-full">
+                    <h2 class="text-headingThree font-bold md:text-headingTwo">Dashboard & Sass Design</h2>
+                    <div class="flex justify-between items-center">
+                        <p class="font-bold">Explore</p>
+                        <button class="bg-bluePrimary p-3 rounded-full">
+                            <i data-feather="arrow-up-right" class="text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Skill section-->
+    <section id="skills" class="relative">
+        <div class="container mx-auto px-6 py-28">
+            <div class="flex flex-col gap-8 md:space-x-8 md:flex-row">
+                    <div class="flex flex-col gap-y-8 w-full md:w-1/2">
+                        <h1 class="text-headingTwo font-bold leading-tight text-center md:text-left md:text-headingOne">
+                            Skills & Experience
+                        </h1>
+                        <div class="flex gap-x-5 text-center max-w-md md:justify-start md:text-left">
+                            <span class="mt-2 w-16 h-[2px] bg-black"></span>
+                            <p class="text-sm">A specialist in UI/UX design. A passion of mine is designing and solving problem through userexperience, primarily on modern web UI.</p>
+                            </p>
+                        </div>
+                        <!--Skills-->
+                        <div class="flex flex-col space-y-10">
+                        <h2 class="text-headingFour font-bold md:text-headingThree">Skills</h2>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                            <!--Skill 1-->
+                            <div class="flex flex-col gap-5">
+                                <div class="bg-black p-6 w-20 h-20 rounded-full">
+                                    <i data-feather="pen-tool" class="text-white w-8 h-8"></i>
+                                </div>
+                                <p class="text-headingFive font-bold">Visual Design</p>
+                            </div>
+                            <!--Skill 2-->
+                            <div class="flex flex-col gap-5">
+                                <div class="bg-black p-6 w-20 h-20 rounded-full">
+                                    <i data-feather="table" class="text-white w-8 h-8"></i>
+                                </div>
+                                <p class="text-headingFive font-bold">Wireframe</p>
+                            </div>
+                            <!--Skill 3-->
+                            <div class="flex flex-col gap-5">
+                                <div class="bg-black p-6 w-20 h-20 rounded-full">
+                                    <i data-feather="command" class="text-white w-8 h-8"></i>
+                                </div>
+                                <p class="text-headingFive font-bold">User Experience Design</p>
+                            </div>
+                            <!--Skill 4-->
+                            <div class="flex flex-col gap-5">
+                                <div class="bg-black p-6 w-20 h-20 rounded-full">
+                                    <i data-feather="slack" class="text-white w-8 h-8"></i>
+                                </div>
+                                <p class="text-headingFive font-bold">Prototype</p>
+                            </div>
+                            <!--Skill 5-->
+                            <div class="flex flex-col gap-5">
+                                <div class="bg-black p-6 w-20 h-20 rounded-full">
+                                    <i data-feather="wind" class="text-white w-8 h-8"></i>
+                                </div>
+                                <p class="text-headingFive font-bold">Art Direction</p>
+                            </div>
+                            <!--Skill 4-->
+                            <div class="flex flex-col gap-5">
+                                <div class="bg-black p-6 w-20 h-20 rounded-full">
+                                    <i data-feather="user" class="text-white w-8 h-8"></i>
+                                </div>
+                                <p class="text-headingFive font-bold">User Research</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!--Experience-->
+                    <div class="flex flex-col w-full md:w-1/2">
+                        <h2 class="text-headingFour font-bold mb-12 md:text-headingThree">Experience</h2>
+                        <!--Experiences 1-->
+                        <div class="flex space-x-8 border-t-2 border-t-black py-6">
+                            <p class="font-bold pt-1">2019-Present</p>
+                            <div class="flex flex-col gap-4">
+                                <h3 class="text-headingFive font-bold">Product Designer</h3>
+                                <p>Amazon Inc</p>
+                            </div>
+                        </div>
+                        <!--Experiences 2-->
+                        <div class="flex space-x-8 border-t-2 border-t-black py-6">
+                            <p class="font-bold pt-1">2018-2019</p>
+                            <div class="flex flex-col gap-4">
+                                <h3 class="text-headingFive font-bold">UI/UX Designer</h3>
+                                <p>Microsoft</p>
+                            </div>
+                        </div>
+                        <!--Experiences 1-->
+                        <div class="flex space-x-8 border-t-2 border-t-black py-6">
+                            <p class="font-bold pt-1">2016-2018</p>
+                            <div class="flex flex-col gap-4">
+                                <h3 class="text-headingFive font-bold">Web UI/UX Designer</h3>
+                                <p>Google</p>
+                            </div>
+                        </div>
+                        <!--Experiences 1-->
+                        <div class="flex space-x-8 border-t-2 border-t-black py-6">
+                            <p class="font-bold">2014-2016</p>
+                            <div class="flex flex-col gap-4">
+                                <h3 class="text-headingFive font-bold">UI Designer</h3>
+                                <p>Facebook</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+        </div>
+        <img src="assets/bottom.png" alt="" class="absolute bottom-0 right-[10vw] w-[150px] md:w-[250px] md:right-[20vw] ">
+    </section>
+
+    <!--Project section-->
+    <section id="project" class="md:min-h-screen bg-bgPrimary">
+        <div class="container mx-auto py-28">
+            <div class="flex flex-col md:flex-row md:space-x-8">
+                <!-Column One->
+                <div class="flex flex-col w-full gap-8 md:w-1/3">
+                     <h1 class="text-headingTwo font-bold leading-tight text-center md:text-left md:text-headingOne">
+                            Latest Projects
+                      </h1>
+                        <div class="flex flex-col py-4 gap-5 border-t-2 border-t-black">
+                            <div class="flex flex-row justify-between gap-3 items-center">
+                                <div>
+                                    <h3 class="text-headingFour font-bold md:text-headingThree">Plantshop Landing Page Design</h3>
+                                    <p>Web/Landing Page</p>
+                                </div>
+                                <button class="bg-bluePrimary p-3 rounded-full">
+                                    <i data-feather="arrow-up-right" class="w-6 h-6 text-white"></i>
+                                </button>
+                            </div>
+                            <img src="/assets/pr-1.png" />
+                        </div>
+                </div>
+                <!-Column Two->
+                <div class="flex flex-col w-full md:w-1/3 md:mt-28">
+                    <div class="flex flex-col py-4 gap-5 border-t-2 border-t-black">
+                            <div class="flex flex-row justify-between gap-3 items-center">
+                                <div>
+                                    <h3 class="text-headingFour font-bold md:text-headingThree">VPS Hosting Website Design</h3>
+                                    <p>Web/Multipage Website</p>
+                                </div>
+                                <button class="bg-bluePrimary p-3 rounded-full">
+                                    <i data-feather="arrow-up-right" class="w-6 h-6 text-white"></i>
+                                </button>
+                            </div>
+                            <img src="/assets/pr-2.png" />
+                        </div>
+                </div>
+                <!-Column Three->
+                <div class="flex flex-col w-full md:w-1/3">
+                    <div class="flex flex-col py-4 gap-5 border-t-2 border-t-black">
+                            <div class="flex flex-row justify-between gap-3 items-center">
+                                <div>
+                                    <h3 class="text-headingFour font-bold md:text-headingThree">Book Landing Page Design</h3>
+                                    <p>Web/Landing Page</p>
+                                </div>
+                                <button class="bg-bluePrimary p-3 rounded-full">
+                                    <i data-feather="arrow-up-right" class="w-6 h-6 text-white"></i>
+                                </button>
+                            </div>
+                            <img src="/assets/pr-3.png" />
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Testimonial Section-->
+    <section id="testimonial" class="md:min-h-screen">
+      <div class="container mx-auto py-28 px-6 flex flex-col gap-y-10">
+        <!--Top Section-->
+        <div class="flex flex-col gap-10 md:flex-row">
+          <div class="w-full md:w-1/3">
+              <h1 class="text-headingTwo font-bold leading-tight text-center md:text-left md:text-headingOne">Client's Kind Word</h1>
+          </div>
+            <div class="flex gap-x-5 text-center max-w-md mt-2 md:justify-start md:text-left">
+                  <span class="mt-2 w-16 h-[2px] bg-black"></span>
+                  <p class="text-sm">A specialist in UI/UX design. A passion of mine is designing and solving problem through userexperience, primarily on modern web UI.</p>
+                  </p>
+              </div>
+
+        </div>
+        <!--Carousel Section-->
+        <div>
+          <div class="owl-carousel">
+            <!--Item 1-->
+            <div class="flex flex-col  items-center gap-5 md:flex-row">
+              <img src="/assets/testimonial.png"/>
+              <div class="py-20 px-10 border-t-2 border-b-2 border-black flex flex-col gap-10 text-center md:text-left">
+                <p class="text-2xl font-light">"I've  Been Working With Casey Exclusively Since 2014 And It Has been Great! He Works Fast And Consistently Delivers High-Quality Work. He Takes My Visiob And Translate It Into A Professional Design That Functions For My Business Goals. I've Really Appreciated How He's Always Focused On The Function Of The Piece As Well As The Visual Design."</p>
+                <div class="flex flex-col gap-y-3">
+                  <h3 class="text-3xl font-medium">Imran Khan</h3>
+                <p class="flex justify-center space-x-4 md:justify-start"><span class="w-6 h-[3px] mt-2 bg-black"></span><span>CEO, Pine-Apple</span></p>
+                </div>
+              </div>
+            </div>
+            <!--Item 2-->
+            <div class="flex flex-col  items-center gap-5 md:flex-row">
+              <img src="/assets/testimonial2.png"/>
+              <div class="py-20 px-10 border-t-2 border-b-2 border-black flex flex-col gap-10 text-center md:text-left">
+                <p class="text-2xl font-light">"I've  Been Working With Casey Exclusively Since 2014 And It Has been Great! He Works Fast And Consistently Delivers High-Quality Work. He Takes My Visiob And Translate It Into A Professional Design That Functions For My Business Goals. I've Really Appreciated How He's Always Focused On The Function Of The Piece As Well As The Visual Design."</p>
+                <div class="flex flex-col gap-y-3">
+                  <h3 class="text-3xl font-medium">Imran Khan</h3>
+                <p class="flex justify-center space-x-4 md:justify-start"><span class="w-6 h-[3px] mt-2 bg-black"></span><span>CEO, Pine-Apple</span></p>
+                </div>
+              </div>
+            </div>
+            <!--Item 3-->
+            <div class="flex flex-col  items-center gap-5 md:flex-row">
+              <img src="/assets/testimonial3.png"/>
+              <div class="py-20 px-10 border-t-2 border-b-2 border-black flex flex-col gap-10 text-center md:text-left">
+                <p class="text-2xl font-light">"I've  Been Working With Casey Exclusively Since 2014 And It Has been Great! He Works Fast And Consistently Delivers High-Quality Work. He Takes My Visiob And Translate It Into A Professional Design That Functions For My Business Goals. I've Really Appreciated How He's Always Focused On The Function Of The Piece As Well As The Visual Design."</p>
+                <div class="flex flex-col gap-y-3">
+                  <h3 class="text-3xl font-medium">Imran Khan</h3>
+                <p class="flex justify-center space-x-4 md:justify-start"><span class="w-6 h-[3px] mt-2 bg-black"></span><span>CEO, Pine-Apple</span></p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact Section-->
+    <section id="contact" class="bg-bgPrimary">
+      <div class="container mx-auto py-28 px-6">
+          <div class="flex flex-col gap-10 md:flex-row">
+            <div class="w-full flex flex-col gap-10 md:w-1/3">
+              <h1 class="text-headingTwo font-bold leading-tight text-center md:text-left md:text-headingOne">
+                  Let's Discuss Your Project
+              </h1>
+              <div>
+                <div class="py-6 border-t-2 border-black flex space-x-8 items-center">
+                  <div class="bg-white p-5 rounded-full">
+                    <i data-feather="message-square" class="w-8 h-8"></i>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span class="text-sm">Email</span>
+                    <p class="text-xl font-bold">greatkhanjoy@gmail.com</p>
+                  </div>
+                </div>
+                <div class="py-6 border-t-2 border-black flex space-x-8 items-center">
+                  <div class="bg-white p-5 rounded-full">
+                    <i data-feather="target" class="w-8 h-8"></i>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span class="text-sm">Location</span>
+                    <p class="text-xl font-bold">Jamalpur, 2000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full flex md:w-2/3 justify-center">
+              <div class="flex items-center space-x-20 bg-[url('/assets/smile2.svg')] bg-cover bg-no-repeat bg-center p-16">
+                <p class="text-2xl font-bold"><span class="text-white text-6xl">👋🏾</span> Say Hi!</p>
+                <button class="bg-bluePrimary p-12 rounded-full"><i data-feather="arrow-up-right" class="text-white w-16 h-16"></i></button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="footer container mx-auto py-10">
+        <div class="flex flex-col md:flex-row justify-between gap-5 items-center border-t-2 border-t-black py-5">
+          <p>&copy; 2023 All Right Reserved</p>
+          <p>Developed By Greatkhanjoy</p>
+          <p>Greatkhanjoy@gmail.com</p>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+        <script>
+      feather.replace();
+      $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        responsive:{
+          0:{
+            items:1,
+            nav:true
+          },
+          768:{
+            items:1,
+            nav:true
+          }
+        }
+      });
+    });
+    </script>
+  </body>
+</html>
